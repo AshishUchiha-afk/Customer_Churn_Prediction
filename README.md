@@ -40,6 +40,12 @@ Follow these steps if you want to use the Kaggle API to download the dataset dir
    # Download and unzip the dataset
    kaggle.api.dataset_download_files('dataset', path='.', unzip=True)
 
+---
+
+   ## 🌐 Live Demo
+
+> 🔗 Streamlit Cloud App - https://customerchurnprediction-2105.streamlit.app/
+
    ## 📌 Project Highlights
 
 - 💡 Predicts customer churn using decision tree, random forest, and XGBoost classifiers
@@ -59,13 +65,18 @@ Follow these steps if you want to use the Kaggle API to download the dataset dir
 - XGBoost
 - Imbalanced-learn (SMOTE)
 - Pickle
-
+  
+---
+## Project contents
 customer_churn_prediction/
-├── customer_churn_prediction.py   → Main Python script
-├── WA_Fn-UseC_-Telco-Customer-Churn.csv  → Dataset (after download)
-├── customer_churn_model.pkl       → Trained model (generated)
-├── encoders.pkl                   → Saved label encoders
-└── README.md                      → Project documentation
+
+├── app.py                     # Streamlit UI
+├── customer_churn_model.pkl   # Trained ML model
+├── encoders.pkl               # LabelEncoders for categorical features
+├── requirements.txt           # Dependencies
+└── README.md                  # Project info
+
+---
 
 🧪 Model Evaluation
 
@@ -73,8 +84,8 @@ customer_churn_prediction/
 
 📊 Evaluation metrics include accuracy score, confusion matrix, and classification report
 
-📌 Future Improvements
+---
 
-Add a Streamlit or Flask web app for live prediction
+📌 Future Improvements
 
 Use hyperparameter tuning with GridSearchCV
